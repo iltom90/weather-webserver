@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
                 callback(body.error,undefined)
             else 
                 callback(undefined ,{
-                    description: body.daily.summary + ',currently ' + body.currently.temperature + ' degrees, this is  ' + body.currently.precipProbability + '% rain ',
+                    description: body.daily.summary + ', il ' + body.currently.precipProbability + '% di probabilità di rovesci ',
                     body
                  } )            
         }
