@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
                 callback(body.error,undefined)
             else 
                 callback(undefined ,{
-                    description: 'Ciao Jessica, ecco le previsioni per ' +  body.daily.summary,
+                    description: body.daily.summary,
                     body
                  } )            
         }

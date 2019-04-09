@@ -16,7 +16,7 @@ whaterForm.addEventListener('submit', (e) =>{
             if (data.error){                
                 errors.textContent= data.error
             }else{
-                weatherDesc.textContent = data.weather
+                weatherDesc.textContent = 'Ciao Jessica, ecco le previsioni per ' + data.location + '. ' + data.weather
             }            
         })   
     })
