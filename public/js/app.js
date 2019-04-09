@@ -1,6 +1,3 @@
-
-
-
 const whaterForm = document.querySelector('form')
 const search = document.querySelector('input')
 const weatherDesc = document.querySelector('#weather')
