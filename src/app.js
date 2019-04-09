@@ -48,7 +48,7 @@ app.get('/weather', (req, res )=> {
                         res.send({
                             location : location,
                             forecastData: forecastData.body,
-                            weather: 'Previsioni per: ' + location + '. ' + forecastData.description
+                            weather: forecastData.description
                         })
                 })
             }
